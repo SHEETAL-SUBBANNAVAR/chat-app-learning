@@ -1,9 +1,12 @@
 body{
     margin-left: 20px;
+   
 }
 .chat{
-    background-color: aliceblue;
+    background-color: rgb(192, 216, 237);
     padding: 20px;
+    width: 300px;
+    margin-bottom: 2px;
     border-radius: 16px;
     display: inline-block;
 }
@@ -12,4 +15,26 @@ body{
     color:white;    
     padding: 5px 15px;
     border-radius: 16px;
+}
+.button{
+    background-color: #1e90ff;
+    color: white;
+    padding: 10px 22px;
+    border-radius: 20px;
+    border: none;
+    font-size: 15px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.15);
+}
+
+.button:hover{
+    background-color: #0b6edc;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 12px rgba(0,0,0,0.2);
+}
+
+.button:active{
+    transform: translateY(0);
 }
