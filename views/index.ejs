@@ -18,8 +18,7 @@
     <div class="msg">
         <p><%=chat.Mess %></p>
         <form method="get" action="/chats/<%=chat._id%>/edit">
-            <button class="button">Edit</button>    
-        </form>
+            <button class="button edit-btn">Edit</button>        </form>
         <form method="post" action="/chats/<%=chat._id%>?_method=DELETE">
             <button class="button">Delete</button>    
         </form>

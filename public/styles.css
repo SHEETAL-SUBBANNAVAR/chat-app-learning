@@ -1,40 +1,126 @@
+/* ---------- Page Style ---------- */
 body{
-    margin-left: 20px;
-   
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #eef2f7;
+    margin: 30px;
 }
+
+/* ---------- Title ---------- */
+h3{
+    color:#333;
+    margin-bottom:20px;
+}
+
+/* ---------- Chat Card ---------- */
 .chat{
-    background-color: rgb(192, 216, 237);
-    padding: 20px;
-    width: 300px;
-    margin-bottom: 2px;
-    border-radius: 16px;
-    display: inline-block;
+    background-color:#d7e8f7;
+    padding:18px;
+    width:340px;
+    border-radius:16px;
+    margin-bottom:20px;
+    box-shadow:0 4px 10px rgba(0,0,0,0.1);
 }
+
+/* ---------- Message Bubble ---------- */
 .msg{
-    background-color:dodgerblue;
-    color:white;    
-    padding: 5px 15px;
-    border-radius: 16px;
+    background-color:#1e90ff;
+    color:white;
+    padding:12px 15px;
+    border-radius:16px;
+    margin:10px 0;
+    font-size:15px;
 }
+
+/* ---------- Buttons ---------- */
 .button{
-    background-color: #1e90ff;
-    color: white;
-    padding: 10px 22px;
-    border-radius: 20px;
-    border: none;
-    font-size: 15px;
-    font-weight: 500;
-    cursor: pointer;
-    transition: all 0.3s ease;
-    box-shadow: 0 3px 8px rgba(0,0,0,0.15);
+    background-color:#1e90ff;
+    color:white;
+    padding:8px 18px;
+    border-radius:20px;
+    border:none;
+    font-size:14px;
+    cursor:pointer;
+    margin-top:6px;
+    transition:0.3s;
 }
 
 .button:hover{
-    background-color: #0b6edc;
-    transform: translateY(-2px);
-    box-shadow: 0 5px 12px rgba(0,0,0,0.2);
+    background-color:#0b6edc;
 }
 
-.button:active{
-    transform: translateY(0);
+/* ---------- Delete Button ---------- */
+form[action*="DELETE"] .button{
+    background-color:#e63946;
+}
+
+form[action*="DELETE"] .button:hover{
+    background-color:#c82333;
+}
+
+/* ---------- Inputs ---------- */
+input, textarea{
+    width:300px;
+    padding:8px;
+    border-radius:8px;
+    border:1px solid #ccc;
+    font-size:14px;
+}
+
+textarea{
+    height:80px;
+}
+
+/* ---------- Horizontal Line ---------- */
+hr{
+    border:none;
+    border-top:1px solid #ccc;
+    margin:10px 0;
+}
+
+/* ---------- Time Text ---------- */
+.chat p:last-child{
+    font-size:12px;
+    color:#555;
+}
+
+/* ---------- Edit Page Container ---------- */
+.edit-container{
+    background: linear-gradient(135deg, #dbeafe, #bfdbfe);    width:600px;
+    padding:30px 35px;
+    border-radius:18px;
+    box-shadow:0 10px 25px rgba(0,0,0,0.15);
+    margin:auto;
+}
+/* ---------- Edit Page Text ---------- */
+.edit-container p{
+    font-size:18px;
+    color:#333;
+    margin-bottom:12px;
+}
+
+/* ---------- Edit Textarea ---------- */
+.edit-container textarea{
+    width:100%;
+    height:120px;
+    padding:15px;
+    border-radius:12px;
+    border:1px solid #ccc;
+    font-size:16px;
+}
+
+/* ---------- Edit Button ---------- */
+
+.edit-btn{
+    background-color:#28a745;
+    color:white;
+    border:none;
+    padding:8px 18px;
+    border-radius:20px;
+    font-size:14px;
+    cursor:pointer;
+    margin-top:6px;
+}
+
+.edit-btn:hover{
+    background-color:#1f8a39;
 }
