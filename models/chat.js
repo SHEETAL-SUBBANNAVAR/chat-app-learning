@@ -10,12 +10,12 @@ const chatSchema = new mongoose.Schema({
     }, 
     Mess:{
         type: String,
-        maxlength: 50,
+        maxlength: 500,
     }, 
     craetes_at: {
         type: Date,
         required: true,
-    },
+    },          
 });
 
 const Chat = mongoose.model('Chat', chatSchema);
